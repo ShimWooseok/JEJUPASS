@@ -1,0 +1,181 @@
+/* 노멀라이징 */
+*{
+    padding: 0;
+    margin: 0;
+}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  ul,
+  li {
+    list-style: none;
+  }
+  
+  /*라이브러리*/
+  .cell {
+    float: left;
+  }
+  .cell-r{
+    float : right;
+  }
+  .row::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  
+  ul, li{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .con{
+    width : 1400px;
+    margin : 0 auto; 
+  }
+  /* 스타일 */
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url("./font/Happiness-Sans-Bold.ttf");
+}
+@font-face {
+  font-family: 'Happiness-Sans-Regular';
+  src: url("./font/Happiness-Sans-Regular.ttf");
+}
+
+
+
+
+/* 스타일 */
+.wrapper{
+    position: relative;
+}
+.wrapper > .side{
+    position: fixed;
+    top : 0;
+    right : -80%;
+    z-index: 99;
+    transition: 0.8s;
+    font-family: 'Happiness-Sans-Regular';
+}
+.wrapper > .side.active{
+    right : 0%;
+}
+.wrapper > .hidden-box{
+  position: fixed;
+  top : 0;
+  left : 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 98;
+  background-color: #000;
+  display: none;
+  opacity: 0.7;
+}
+.wrapper > .hidden-box.active{
+  display: block;
+}
+.wrapper > .side > div > .top > .top-ul{
+  color : #555555;
+}
+.wrapper > .side > div > .center{
+  
+}
+.wrapper > .side > div > .center > li{
+  font-size: 25px;
+  font-family: 'Happiness-Sans-Bold';
+  color : #333333;
+  height: 91px;
+  border-bottom: 1px  solid #eeeeee;
+  box-sizing: border-box;
+
+}
+.wrapper > .side > div > .center > li > h2{
+  width: 100px;
+  height: 30px;
+}
+.wrapper > .side > div > .center > li > ul{
+
+  font-family: 'Happiness-Sans-Regular';
+  font-size: 17px;
+  margin-top: 6px;
+  margin-left:  170px;
+
+
+  
+}
+
+
+/* 동영상 풀스크린 */
+.video-test{
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    position: relative;
+}
+.top-bar{
+    position: absolute;
+    top : 0;
+    left: 0;
+    z-index: 10;
+}
+.wrapper > header > .top-bar > .con > ul{
+    font-family: 'Happiness-Sans-Bold';
+    color : white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+}
+.main-bg{
+    position: relative;
+}
+.main-bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top : 0;
+    background-color: #000;
+    z-index: 0;
+    opacity: 0.2;
+}
+.scrolldown{
+    position: absolute;
+    top: 86%;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    animation: fly 2s linear infinite;
+}
+
+.scrolldown > img {
+    width:100%;
+    display:block;
+  }
+  
+@keyframes fly {
+  
+    /* 지워도 됩니다! 0% 일 때는 아무런 값을 주지 않아 기본값. 평소 상태를 의미 */
+    0% {
+      
+    }
+    
+    /* 50% 일 때에는 margin-top이 30px이어야 한다! */
+    50% {
+      margin-top:30px;
+    }
+    
+    /* 지워도 됩니다! 100% 일 때는 아무런 값을 주지 않아 기본값. 평소 상태를 의미 */
+    100% {
+      
+    }
+  }
+  
+  /* -> 그래서 margin-top:0 - margin-top:30px - margin-top:0 무한 반복이 되는 것! 나비가 둥실둥실 */
+
