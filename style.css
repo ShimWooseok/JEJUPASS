@@ -44,8 +44,18 @@
   font-family: 'Happiness-Sans-Regular';
   src: url("./font/Happiness-Sans-Regular.ttf");
 }
-
-
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url("./font/Pretendard-Medium.ttf");
+}
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url("./font/Pretendard-SemiBold.ttf");
+}
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url("./font/Pretendard-Bold.ttf");
+}
 
 
 /* 스타일 */
@@ -142,7 +152,7 @@ header{
     top : 0;
     background-color: #000;
     z-index: 0;
-    opacity: 0.2;
+    opacity: 0.3;
 }
 .scrolldown{
     position: absolute;
@@ -154,6 +164,19 @@ header{
     animation: fly 2s linear infinite;
 }
 
+.main-bg > .txt-box{
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'Pretendard-medium';
+  color: #FFF;
+  text-align: center;
+  z-index: 10;
+}
+.main-bg > .txt-box > .txt{
+  font-family: 'Happiness-Sans-Bold';
+}
 .scrolldown > img {
     width:100%;
     display:block;
@@ -179,3 +202,12 @@ header{
   
   /* -> 그래서 margin-top:0 - margin-top:30px - margin-top:0 무한 반복이 되는 것! 나비가 둥실둥실 */
 
+.section01 > .con > .menual > div > img{
+  display: none;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.section01 > .con > .menual > div > img.active{
+  display: block;
+}
