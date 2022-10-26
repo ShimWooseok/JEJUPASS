@@ -116,6 +116,34 @@
 
   
 }
+.wrapper > .scroll-down-top-bar{
+  position: fixed;
+  top : 0px;
+  left: 0;
+  z-index: 97;
+  font-family: 'Happiness-Sans-Bold';
+  color : white;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+.wrapper > .scroll-down-top-bar.active{
+  position: fixed;
+  top : 0;
+  left: 0;
+  z-index: 97;
+  font-family: 'Happiness-Sans-Bold';
+  color : white;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  opacity: 1;
+}
+
 
 
 /* 동영상 풀스크린 */
@@ -177,37 +205,56 @@ header{
 .main-bg > .txt-box > .txt{
   font-family: 'Happiness-Sans-Bold';
 }
-.scrolldown > img {
-    width:100%;
-    display:block;
-  }
-  
-@keyframes fly {
-  
-    /* 지워도 됩니다! 0% 일 때는 아무런 값을 주지 않아 기본값. 평소 상태를 의미 */
-    0% {
-      
-    }
-    
-    /* 50% 일 때에는 margin-top이 30px이어야 한다! */
-    50% {
-      margin-top:30px;
-    }
-    
-    /* 지워도 됩니다! 100% 일 때는 아무런 값을 주지 않아 기본값. 평소 상태를 의미 */
-    100% {
-      
-    }
-  }
-  
-  /* -> 그래서 margin-top:0 - margin-top:30px - margin-top:0 무한 반복이 되는 것! 나비가 둥실둥실 */
 
-.section01 > .con > .menual > div > img{
-  display: none;
+
+
+.scrolldown {
+  position:absolute;
+  top:85%;
+  left:50%;
+  width:2px;
+  height:100px;
+  background-color:white;
+  z-index: 1;
+}
+
+
+
+
+.section01 > .con > .menual  > div{
+  font-family: 'Happiness-Sans-Bold';
+  font-size: 13px;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 
-.section01 > .con > .menual > div > img.active{
-  display: block;
+.section01 > .con > .menual  > .box1{
+  background-image: url(./img/렌터카\ 검색2.png);
+  background-repeat: no-repeat;
+  background-position: 34px 27px;
+}
+.section01 > .con > .menual  > .box2{
+  background-image: url(./img/항공검색2.png);
+  background-repeat: no-repeat;
+  background-position: 34px 27px;
+}
+.section01 > .con > .menual  > .box3{
+  background-image: url(./img/숙박검색2.png);
+  background-repeat: no-repeat;
+  background-position: 34px 27px;
+}
+.section01 > .con > .menual  > .box4{
+  background-image: url(./img/트립검색2.png);
+  background-repeat: no-repeat;
+  background-position: 34px 27px;
+}
+.section01 > .con > .menual  > .box5{
+  background-image: url(./img/카페검색2.png);
+  background-repeat: no-repeat;
+  background-position: 34px 27px;
+}
+.section01 > .con > .menual  > .box6{
+  background-image: url(./img/맛집검색2.png);
+  background-repeat: no-repeat;
+  background-position: 34px 27px;
 }
