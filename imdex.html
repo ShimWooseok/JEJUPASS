@@ -9,6 +9,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- 테일윈드 -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 스와이퍼 -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./style.css">
     <script src="./jss.js"></script>
 </head>
@@ -149,7 +158,7 @@
         <div class="section section01 w-[100%] h-[515px] bg-[#F8F8F8]">
             <div class="con h-[515px]">
                 <div class="menual flex justify-center gap-[45px] box-border pt-[100px]">
-                    <div class="menual-box box1 w-[100px] h-[100px] rounded-[20px] cursor-pointer box-border pt-[27px]">
+                    <div class="menual-box box1 active w-[100px] h-[100px] rounded-[20px] cursor-pointer box-border pt-[27px]">
                         <div class="txt text-center mt-[43px]">
                             렌터카검색
                         </div>
@@ -180,9 +189,329 @@
                         </div>
                     </div> 
                 </div>
+                <div class="bar bar01 active">
+                <div class="search-box  search01 w-[100%] h-[120px] mt-[80px] flex gap-[20px]">
+                    <div class="active w-[300px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <p class="text-[#474848] text-[14px]">대여/반납일</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">대여/반납일을 선택해주세요</p>
+                    </div>
+                    <div class="w-[300px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <p class="text-[#474848] text-[14px]">대여/반납 시간</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">시간을 선택해주세요</p>
+                    </div>
+                    <div class="w-[300px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <p class="text-[#474848] text-[14px]">차량조건</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">조건을 선택해주세요</p>
+                    </div>
+                    <div class="w-[300px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <p class="text-[#474848] text-[14px]">운전자조건</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">운전자조건을 선택해주세요</p>
+                    </div>
+                    <div class="search w-[120px] h-[120px] rounded-[10px] bg-[#63A1FF] text-center leading-[120px] text-[#fff] text-[20px]">
+                        검색
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar02 ">
+                <div class="search-box  search01 w-[100%] h-[120px] mt-[80px] flex gap-[20px]">
+                    <div class="active flex  w-[620px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <div>
+                        <p class="text-[#474848] text-[14px]">출발</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">어디서 떠나시나요?</p>
+                    </div>
+                    <img class="w-[32px] h-[32px] mt-[20px] ml-[100px]" src="./img/항공검색바 버튼.png" alt="">
+                    <div class="ml-[20px]">
+                        <p class="text-[#474848] text-[14px]">도착</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">어디로 떠나시나요?</p>
+                        
+                    </div>
+                    </div>
+
+                    <div class="w-[300px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <p class="text-[#474848] text-[14px]">탑승일</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">탑승일을 선택해주세요.</p>
+                    </div>
+                    <div class="w-[300px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <p class="text-[#474848] text-[14px]">인원 및 좌석등급</p>
+                        <p class="text-[#000] font-bold text-[20px] mt-[13px]">성인1, 일반석</p>
+                    </div>
+                    <div class="search w-[120px] h-[120px] rounded-[10px] bg-[#63A1FF] text-center leading-[120px] text-[#fff] text-[20px]">
+                        검색
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar03 ">
+                <div class="search-box  search01 w-[100%] h-[120px] mt-[80px] flex gap-[20px]">
+                    <div class="active w-[620px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <p class="text-[#474848] text-[14px]">여행지</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">여행지를 선택하세요.</p>
+                    </div>
+
+                    <div class="w-[300px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <p class="text-[#474848] text-[14px]">숙박일</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">여행일정을 선택해주세요.</p>
+                    </div>
+                    <div class="w-[300px] h-[120px] rounded-[10px] box-border p-[25px_20px] bg-[#fff]">
+                        <p class="text-[#474848] text-[14px]">인원</p>
+                        <p class="text-[#acacac] text-[17px] mt-[13px]">인원을 선택하세요.</p>
+                    </div>
+                    <div class="search w-[120px] h-[120px] rounded-[10px] bg-[#63A1FF] text-center leading-[120px] text-[#fff] text-[20px]">
+                        검색
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar04 ">
+                <div class="search-box  search01 w-[100%] h-[120px] mt-[110px] flex justify-center gap-[20px]">
+                    <div class="active w-[620px] h-[65px] rounded-[10px] box-border p-[20px_20px] bg-[#fff]">
+                        <p class="text-[#acacac] text-[17px]">여행상품명을 검색하세요.</p>
+                    </div>
+                    
+                    <div class="search w-[65px] h-[65px] rounded-[10px] bg-[#63A1FF] text-center leading-[120px] text-[#fff] text-[20px]">
+                        <img class="mx-auto pt-[24.5px]" src="./img/서치.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar05 ">
+                <div class="search-box  search01 w-[100%] h-[120px] mt-[110px] flex justify-center gap-[20px]">
+                    <div class="active w-[620px] h-[65px] rounded-[10px] box-border p-[20px_20px] bg-[#fff]">
+                        <p class="text-[#acacac] text-[17px]">상호명 혹은 키워드를 입력하세요.</p>
+                    </div>
+                    
+                    <div class="search w-[65px] h-[65px] rounded-[10px] bg-[#63A1FF] text-center leading-[120px] text-[#fff] text-[20px]">
+                        <img class="mx-auto pt-[24.5px]" src="./img/서치.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar06 ">
+                <div class="search-box  search01 w-[100%] h-[120px] mt-[110px] flex justify-center gap-[20px]">
+                    <div class="active w-[620px] h-[65px] rounded-[10px] box-border p-[20px_20px] bg-[#fff]">
+                        <p class="text-[#acacac] text-[17px]">맛집을 검색하세요.</p>
+                    </div>
+                    
+                    <div class="search w-[65px] h-[65px] rounded-[10px] bg-[#63A1FF] text-center leading-[120px] text-[#fff] text-[20px]">
+                        <img class="mx-auto pt-[24.5px]" src="./img/서치.png" alt="">
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
-        <div class="section section02 w-[100%] h-[2000px]"></div>
+        <div class="section section02 w-[100%] h-[684px] mt-[120px] ">
+            <div class="con h-[100%] ">
+                <div class="title-box flex items-center gap-[13px]">
+                <div class="">최저가 렌터카 추천</div>
+                <div><img src="./img/렌터카icon.png" alt=""></div>
+            </div>
+
+
+             <!-- Swiper -->
+    <div class="swiper mySwiper mt-[76px] ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide01">
+            <div class="text-[17px]">경형</div>
+            <div class="img-box w-[210px] h-[210px]">
+            <img class="mt-[37px]" src="./img/렌터카 이미지1.png" alt=""></div>
+            <div class="txt">
+                <p>운전이 어렵다면 경차추천</p>
+                <p class="mt-[16px] text-[14px] text-[#142160]">2022-10-24 월요일인수</p>
+                <p class="mt-[11px] text-[16px] text-[#63A1FF]">10,700원~</p>
+                
+            </div>
+            <div class="w-[120px] h-[40px] text-[#fff] 
+            text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+                예약하기
+            </div>
+
+        </div>
+        <div class="swiper-slide slide02">
+          <div class="text-[17px]">준중형</div>
+          <div class="img-box w-[210px] h-[210px]">
+          <img class="mt-[37px]" src="./img/렌터카 이미지2.png" alt=""></div>
+          <div class="txt">
+              <p>요즘 준중형은 중형만큼 커요</p>
+              <p class="mt-[16px] text-[14px] text-[#142160]">2022-10-31 월요일인수</p>
+              <p class="mt-[11px] text-[16px] text-[#63A1FF]">9,300원~</p>
+              
+          </div>
+          <div class="w-[120px] h-[40px] text-[#fff] 
+          text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+              예약하기
+          </div>
+
+      </div>
+      <div class="swiper-slide slide03">
+        <div class="text-[17px]">중형</div>
+        <div class="img-box w-[210px] h-[210px]">
+        <img class="mt-[37px]" src="./img/렌터카 이미지3.png" alt=""></div>
+        <div class="txt">
+            <p>3인 이상 가족끼리 여행할 때</p>
+            <p class="mt-[16px] text-[14px] text-[#142160]">2022-11-02 수요일인수</p>
+            <p class="mt-[11px] text-[16px] text-[#63A1FF]">10,200원~</p>
+            
+        </div>
+        <div class="w-[120px] h-[40px] text-[#fff] 
+        text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+            예약하기
+        </div>
+
+    </div>
+    <div class="swiper-slide slide04">
+      <div class="text-[17px]">전기</div>
+      <div class="img-box w-[210px] h-[210px]">
+      <img class="mt-[37px]" src="./img/렌터카 이미지4.png" alt=""></div>
+      <div class="txt">
+          <p>고유가 시대, 선택이 아닌 필수</p>
+          <p class="mt-[16px] text-[14px] text-[#142160]">2022-10-31 월요일인수</p>
+          <p class="mt-[11px] text-[16px] text-[#63A1FF]">11,300원~</p>
+          
+      </div>
+      <div class="w-[120px] h-[40px] text-[#fff] 
+      text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+          예약하기
+      </div>
+
+  </div>
+  <div class="swiper-slide slide05">
+    <div class="text-[17px]">소형</div>
+    <div class="img-box w-[210px] h-[210px]">
+    <img class="mt-[37px]" src="./img/렌터카 이미지5.png" alt=""></div>
+    <div class="txt">
+        <p>경차보다 더 공간이 필요할 떄</p>
+        <p class="mt-[16px] text-[14px] text-[#142160]">2022-11-02 수요일인수</p>
+        <p class="mt-[11px] text-[16px] text-[#63A1FF]">12,200원~</p>
+        
+    </div>
+    <div class="w-[120px] h-[40px] text-[#fff] 
+    text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+        예약하기
+    </div>
+
+</div>
+<div class="swiper-slide slide06">
+  <div class="text-[17px]">승합</div>
+  <div class="img-box w-[210px] h-[210px]">
+  <img class="mt-[37px]" src="./img/렌터카 이미지6.png" alt=""></div>
+  <div class="txt">
+      <p>4인 이상 이보다 편할 수 없어요</p>
+      <p class="mt-[16px] text-[14px] text-[#142160]">2022-10-30 일요일인수</p>
+      <p class="mt-[11px] text-[16px] text-[#63A1FF]">12,200원~</p>
+      
+  </div>
+  <div class="w-[120px] h-[40px] text-[#fff] 
+  text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+      예약하기
+  </div>
+
+</div>
+<div class="swiper-slide slide07">
+  <div class="text-[17px]">SUV/RV</div>
+  <div class="img-box w-[210px] h-[210px]">
+  <img class="mt-[37px]" src="./img/렌터카 이미지7.png" alt=""></div>
+  <div class="txt">
+      <p>비포장 많은 제주에 딱 좋아</p>
+      <p class="mt-[16px] text-[14px] text-[#142160]">2022-11-02 수요일인수</p>
+      <p class="mt-[11px] text-[16px] text-[#63A1FF]">12,300원`</p>
+      
+  </div>
+  <div class="w-[120px] h-[40px] text-[#fff] 
+  text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+      예약하기
+  </div>
+
+</div>
+<div class="swiper-slide slide08">
+  <div class="text-[17px]">고급</div>
+  <div class="img-box w-[210px] h-[210px]">
+  <img class="mt-[37px]" src="./img/렌터카 이미지8.png" alt=""></div>
+  <div class="txt">
+      <p>더 안락한 여행을 원한다면</p>
+      <p class="mt-[16px] text-[14px] text-[#142160]">2022-11-02 수요일인수</p>
+      <p class="mt-[11px] text-[16px] text-[#63A1FF]">17,200원~</p>
+      
+  </div>
+  <div class="w-[120px] h-[40px] text-[#fff] 
+  text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+      예약하기
+  </div>
+
+</div>
+<div class="swiper-slide slide09">
+  <div class="text-[17px]">수입</div>
+  <div class="img-box w-[210px] h-[210px]">
+  <img class="mt-[37px]" src="./img/렌터카 이미지9.png" alt=""></div>
+  <div class="txt">
+      <p>커플여행 플렉스가 필요할 때</p>
+      <p class="mt-[16px] text-[14px] text-[#142160]">2022-11-03 목요일인수</p>
+      <p class="mt-[11px] text-[16px] text-[#63A1FF]">20,300원~</p>
+      
+  </div>
+  <div class="w-[120px] h-[40px] text-[#fff] 
+  text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+      예약하기
+  </div>
+
+</div>
+<div class="swiper-slide slide10">
+  <div class="text-[17px]">경형</div>
+  <div class="img-box w-[210px] h-[210px]">
+  <img class="mt-[37px]" src="./img/렌터카 이미지10.png" alt=""></div>
+  <div class="txt">
+      <p>운전이 어렵다면 경차추천</p>
+      <p class="mt-[16px] text-[14px] text-[#142160]">2022-11-02 수요일인수</p>
+      <p class="mt-[11px] text-[16px] text-[#63A1FF]">9,300원~</p>
+      
+  </div>
+  <div class="w-[120px] h-[40px] text-[#fff] 
+  text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+      예약하기
+  </div>
+
+</div>
+<div class="swiper-slide slide11">
+  <div class="text-[17px]">준중형</div>
+  <div class="img-box w-[210px] h-[210px]">
+  <img class="mt-[37px]" src="./img/렌터카 이미지11.png" alt=""></div>
+  <div class="txt">
+      <p>요즘 준중형은 중형만큼 커요</p>
+      <p class="mt-[16px] text-[14px] text-[#142160]">2022-10-31 월요일인수</p>
+      <p class="mt-[11px] text-[16px] text-[#63A1FF]">9,300원~</p>
+      
+  </div>
+  <div class="w-[120px] h-[40px] text-[#fff] 
+  text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+      예약하기
+  </div>
+
+</div>
+<div class="swiper-slide slide12">
+  <div class="text-[17px]">소형</div>
+  <div class="img-box w-[210px] h-[210px]">
+  <img class="mt-[37px]" src="./img/렌터카 이미지12.png" alt=""></div>
+  <div class="txt">
+      <p>경차보다 더 공간이 필요할 때</p>
+      <p class="mt-[16px] text-[14px] text-[#142160]">2022-11-03 목요일인수</p>
+      <p class="mt-[11px] text-[16px] text-[#63A1FF]">12,200원</p>
+      
+  </div>
+  <div class="w-[120px] h-[40px] text-[#fff] 
+  text-center leading-[40px] text-[14px] mt-[22px] bg-[#63A1FF]">
+      예약하기
+  </div>
+
+</div>
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+
+
+
+
+    
+            </div>
+        </div>
         
     </div>
 </body>

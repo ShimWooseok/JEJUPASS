@@ -38,15 +38,36 @@ $(document).ready(function(){
 
 
 
-    $(".section01 > .con > .menual > div > img").click(function(){
+    $(".section01 > .con > .menual > div ").click(function(){
 
         let num = $(this).index();
-        $(".section01 > .con > .menual > div > img").addClass("active");
-        $(".section01 > .con > .menual > div > img").eq(num).siblings().removeClass("active");
+        $(".section01 > .con > .menual > div").addClass("active");
+        $(".section01 > .con > .menual > div").eq(num).siblings().removeClass("active");
         
+        $(".section01 > .con > .bar").addClass("active")
+        $(".section01 > .con > .bar").eq(num).siblings().removeClass("active");
+                
 
 
     })
+
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 48,
+        slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
 
     // 끝
 })
@@ -55,9 +76,9 @@ $(document).ready(function(){
 $(window).scroll(function(){
     let scrollTop = $(this).scrollTop()
     
-    if(scrollTop>=200){
+    if(scrollTop>=100){
       $(".scroll-down-top-bar").addClass("active")
-    } else if(scrollTop < 200){
+    } else if(scrollTop < 100){
       $(".scroll-down-top-bar").removeClass("active")
     }
   })
