@@ -78,7 +78,7 @@ $(window).scroll(function(){
     
     if(scrollTop>=100){
       $(".scroll-down-top-bar").addClass("active")
-    } else if(scrollTop < 100){
+    } else if(scrollTop < 300){
       $(".scroll-down-top-bar").removeClass("active")
     }
   })
