@@ -223,15 +223,57 @@ header{
 
 .scrolldown {
   position:absolute;
-  top:85%;
+  top:88%;
   left:50%;
   width:2px;
-  height:100px;
+  height:50px;
   background-color:white;
   z-index: 1;
+  animation-name: ani-1 ;
+  animation-duration: 2s;
+  animation-fill-mode:none;
+  animation-iteration-count:infinite;
+}
+@keyframes ani-1{
+  0% {
+    top:88%;
+    opacity: 0;
+  }
+  25% {
+   
+    opacity: 1;
+  }
+
+  50% {
+    top : 90%;
+    opacity: 0.8;
+  }
+  
+  70% {
+
+  }
+  
+  80% {
+
+  }
+  
+  100% {
+    top:92%;
+    opacity: 0;
+  }
 }
 
-
+.scrolldown-txt{
+  color : white;
+  position: absolute;
+  font-size: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  top : 86%;
+  z-index: 85;
+  
+  font-family: 'Happiness-Sans-Bold';
+}
 
 
 .section01 > .con > .menual  > div{
@@ -466,4 +508,20 @@ header{
   position: absolute;
   bottom : 0;
   left : 930px
+}
+
+.section04 > .con > .center > .box > .content:hover{
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+.section04 > .con > .center > .box > .content > .txt-box > .title{
+  font-family: 'Happiness-Sans-Bold';
+  font-size: 20px;
+}
+.section04 > .con > .center > .box > .content > .txt-box > .txt{
+  font-family: 'Happiness-Sans-Regular';
+}
+.section04 > .con > .center > .box > .content > .txt-box > div > .point{
+  font-family: 'Happiness-Sans-Bold';
+
 }
