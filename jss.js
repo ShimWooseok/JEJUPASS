@@ -55,8 +55,9 @@ $(document).ready(function(){
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
         spaceBetween: 48,
-        slidesPerGroup: 4,
+        slidesPerGroup: 1,
         loop: true,
+        autoplay: true,
         loopFillGroupWithBlank: true,
         pagination: {
           el: ".swiper-pagination",
@@ -68,6 +69,14 @@ $(document).ready(function(){
         },
       });
 
+
+
+
+
+
+      $("a").click(function(){
+        return false; // return false : 모든 기능 차단
+      });
 
     // 끝
 })
