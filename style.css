@@ -398,13 +398,13 @@ header{
   position: relative;
 }
 
-.swiper {
+.swiper-box1 .swiper {
   width: 100%;
   height: 540px;
   position: relative;
 }
 
-.swiper-slide {
+.swiper-box1 .swiper-slide {
   font-family: 'Happiness-Sans-Bold';
   background: #f5f5f5;
   width: 315px;
@@ -431,7 +431,7 @@ header{
   --swiper-theme-color : #63A1FF;
   --swiper-navigation-size : 0;
 }
-.swiper-slide img {
+.swiper-box1 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -440,11 +440,11 @@ header{
 .swiper-pagination{
 
 }
-.swiper-pagination  .swiper-pagination-bullet{
+.swiper-box1 .swiper-pagination  .swiper-pagination-bullet{
   width: 12px;
   height: 12px;
 }
-.swiper .swiper-button-next, .swiper-button-prev{
+.swiper-box1 .swiper .swiper-button-next, .swiper-button-prev{
   width: 44px;
   height: 44px;
   background: rgba(0, 0, 0, 0.4);
@@ -452,14 +452,14 @@ header{
   top: 48%;
   transform: translateY(-50%);
 }
-.swiper .swiper-button-next{
+.swiper-box1 .swiper .swiper-button-next{
   right : 0;
   background-image: url(./img/next.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.swiper .swiper-button-prev{
+.swiper-box1 .swiper .swiper-button-prev{
   left : 0;
   background-image: url(./img/prev.png);
   background-repeat: no-repeat;
@@ -540,3 +540,91 @@ header{
 .section05 > .con > .content-wrap > a > .content-box > .txt > .p2{
   font-family: 'Happiness-Sans-Regular';
 }
+.section06 > .con > div > .content-wrap > a > .content-box > .img-box{
+  position: relative;
+}
+.section06 > .con > div > .content-wrap > a > .content-box > .img-box > .ranking{
+  position: absolute;
+  top : 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #63A1FF;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  font-family: 'NanumSquareRoundEB';
+  font-size: 16px;
+  color : white;
+}
+.section06 > .con > div > .content-wrap > a > .content-box > .txt-box > .title{
+  font-family: 'NanumSquareRoundB';
+}
+.section06 > .con > div > .content-wrap > a > .content-box > .txt-box  .sub-title{
+  font-family: 'Happiness-Sans-Regular';
+}
+.section06 > .con > div > .content-wrap > a > .content-box > .txt-box > .price{
+  font-family: 'NanumSquareRoundEB';
+}
+.section06 > .con > .content{
+  position: relative;
+}
+.section06 > .con > .content::after{
+  content: "";
+  position: absolute;
+  top : 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 951px; 
+  background-color: #EEEEEE;
+}
+.price{
+  right : 0;
+  bottom : 0;
+}
+
+.swiper-box2{
+  width: 1200px;
+  height: 272px;
+  margin: 0 auto;
+  margin-top: 60px;
+  vertical-align: top;
+  
+}
+
+
+.swiper-box2 > .swiper {
+  width: 1200px;
+  height: 272px;
+  margin: 0 auto;
+
+}
+
+
+.swiper-box2 > .swiper >.swiper-wrapper> .swiper-slide {
+  width: 557px;
+  height: 272px;
+
+
+  Center slide text vertically 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* .swiper-box2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
