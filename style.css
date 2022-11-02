@@ -585,17 +585,18 @@ header{
 }
 
 .swiper-box2{
-  width: 1200px;
+  width: 1162px;
   height: 272px;
   margin: 0 auto;
   margin-top: 60px;
   vertical-align: top;
+  position: relative;
   
 }
 
 
 .swiper-box2 > .swiper {
-  width: 1200px;
+  width: 1162px;
   height: 272px;
   margin: 0 auto;
 
@@ -628,3 +629,34 @@ header{
   height: 100%;
   object-fit: cover;
 } */
+.swiper-box2 > .swiper-pagination{
+  /* position: absolute; */
+
+}
+.section08 > .con > .content-wrap > a > .content-box > .img-box{
+  box-shadow: 0 4px 10px rgba(138, 138, 138, 0.25);
+}
+.section09 > .content-wrap > .content-box > .call > p:nth-child(1){
+  font-family: 'Happiness-Sans-Regular';
+  font-size: 20px;
+}
+.section09 > .content-wrap > .content-box > .call > p:nth-child(2){
+  font-family: 'Happiness-Sans-Bold';
+  font-size: 32px;
+}
+.section09 > .content-wrap > .box1::after{
+  content: "";
+  position: absolute;
+  top : 38%;
+  transform: translateY(-50%);
+  left : 35%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 66px;
+  background-color: #ddd;
+}
+.section10{
+  background-image: url(./img/제주패스구독레터.png);
+  background-position: center;
+  background-size: cover;
+}

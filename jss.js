@@ -64,7 +64,7 @@ $(document).ready(function () {
       autoplay: false,
       loopFillGroupWithBlank: true,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-box1 .swiper-pagination",
         clickable: true,
       },
       navigation: {
