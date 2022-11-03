@@ -431,14 +431,20 @@ header{
   --swiper-theme-color : #63A1FF;
   --swiper-navigation-size : 0;
 }
+.swiper-box1{
+  position: relative;
+}
 .swiper-box1 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.swiper-pagination{
-
+.swiper-box1 .swiper-pagination{
+  position: absolute;
+  top : 97%;
+  left : 50%;
+  transform: translateX(-50%);
 }
 .swiper-box1 .swiper-pagination  .swiper-pagination-bullet{
   width: 12px;
@@ -635,6 +641,9 @@ header{
 }
 .section08 > .con > .content-wrap > a > .content-box > .img-box{
   box-shadow: 0 4px 10px rgba(138, 138, 138, 0.25);
+}
+.section08 > .con > .content-wrap > a > .content-box:hover > .img-box{
+  border: 1px solid #63A1FF;
 }
 .section09 > .content-wrap > .content-box > .call > p:nth-child(1){
   font-family: 'Happiness-Sans-Regular';
