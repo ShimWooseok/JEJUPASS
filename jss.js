@@ -77,37 +77,36 @@ $(document).ready(function () {
   SwiperBox1__init();
 
   function SwiperBox2__init() {
-
-
-
     var swiper02 = new Swiper(".swiper-box2 .mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 40,
-      autoplay : true,
-      loop: true,
-        // centeredSlides : true,
-      loopFillGroupWithBlank: true,
-      // slidesPerView: 2,
-      // autoplay : true,
-      // loop : true,
-      // effect: "cube",
-      // grabCursor: true,
-      // cubeEffect: {
-      //   shadow: true,
-      //   slideShadows: false,
-      //   shadowOffset: false,
-      //   shadowScale: 0,
-      // },
+      slidesPerView: 1.4,
+      // centeredSlides: false,
+      spaceBetween: 30,
+      autoplay : {
+        delay : 2000
+      },
+      loop : true,
       pagination: {
-        el: ".swiper-box2 .swiper-pagination",
-        clickable: true,
+        el: ".swiper-box2 .swiper-pagination2",
+        type: "fraction",
       },
       navigation: {
-        nextEl: ".swiper-box2 .swiper-button-next",
-        prevEl: ".swiper-box2 .swiper-button-prev",
+        nextEl: ".swiper-box2 .swiper-button-next2",
+        prevEl: ".swiper-box2 .swiper-button-prev2",
       },
-    });
+      on : {
+        afterInit : function (_swiper) {
+          const $active_slide = $(_swiper.slides[_swiper.activeIndex]);
+          const html = $active_slide.find(".info-box-wrap").html();
+          $(".swiper-box2__active-slide-info-box-wrap").empty().append(html);
+        },
+        slideChange : function (_swiper) {
+          const $active_slide = $(_swiper.slides[_swiper.activeIndex]);
+          const html = $active_slide.find(".info-box-wrap").html();
+          $(".swiper-box2__active-slide-info-box-wrap").empty().append(html); 
+        }
+      }
 
+    });
   }
   SwiperBox2__init();
 

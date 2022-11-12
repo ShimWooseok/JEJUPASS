@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+
 }
   a {
     color: inherit;
@@ -79,7 +80,7 @@
 .wrapper{
     position: relative;
     z-index: 0;
-
+    overflow: hidden;
 }
 .wrapper > .side{
     position: fixed;
@@ -548,6 +549,26 @@ header{
 .section05 > .con > .content-wrap > a > .content-box > .txt > .p2{
   font-family: 'Happiness-Sans-Regular';
 }
+.section05 > .con > .content-wrap > a > .content-box.box3{
+  position: relative;
+}
+.section05 > .con > .content-wrap > a > .content-box.box3::after{
+  content: "추천";
+  width: 50px;
+  height: 50px;
+  background-color: #63A1FF;
+  color: #fff;
+  border-radius: 999px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  position: absolute;
+  top : 5%;
+  right: 7%;
+}
+
+
+
 .section06 > .con > div > .content-wrap > a > .content-box > .img-box{
   position: relative;
 }
@@ -592,31 +613,49 @@ header{
   bottom : 0;
 }
 
-.swiper-box2{
-  width: 1162px;
-  height: 272px;
-  margin: 0 auto;
-  margin-top: 60px;
-  vertical-align: top;
+ .section07{
+  background-image: url(./img/section07.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
-  
+
+ }
+.section07 > .title-box{
+  position: absolute;
+  top :20%;
+  left : 259px;
+  font-size: 48px;
 }
 
+.section07 > .title-box::after{
+  content: "";
 
-.swiper-box2 > .swiper {
-  width: 1162px;
-  height: 272px;
-  margin: 0 auto;
+  background-image: url(./img/프로모션icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+ .swiper-box2{
 
+  width: 100%;
+  height: 100%;
+  position: relative;
+ }
+ .swiper-box2 > .swiper {
+
+  position: absolute;
+  top : 142px;
+  right : 0;
+  width: 1050px;
+  height: 360px;
 }
 
-
-.swiper-box2 > .swiper >.swiper-wrapper> .swiper-slide {
-  width: 557px;
-  height: 272px;
-
-
-  Center slide text vertically 
+.swiper-box2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -630,17 +669,57 @@ header{
   -webkit-align-items: center;
   align-items: center;
 }
+  
 
-/* .swiper-box2 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-.swiper-box2 > .swiper-pagination{
-  /* position: absolute; */
+
+
+.section07 > .swiper-box2__active-slide-info-box-wrap{
+  font-size: 24px;
+  font-family: 'Happiness-Sans-Regular';
+  color : #474848;
+  position: absolute;
+  top : 50%;
+  left : 259px;
+}
+
+.swiper-box2  .swiper-button-next2, .swiper-button-prev2{
 
 }
+.swiper-box2  .swiper-button-next2{
+  background-image: url(./img/blacknext.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #474848;
+  border-radius: 999px;
+
+}
+.swiper-box2  .swiper-button-prev2{
+  background: rgba(0,0,0,0);
+  background-image: url(./img/blackprev.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #474848;
+  border-radius: 999px;
+}
+.section07 > .swiper-box2  .swiper-pagination2{
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 5px 8px;
+  font-size: 24px;
+  font-family: 'Happiness-Sans-Regular';
+}
+
+.swiper-box2 .swiper-nav-wrap{
+  position: absolute;
+  top : 68%;
+  left : 34%;
+}
+
 .section08 > .con > .content-wrap > a > .content-box > .img-box{
   border: 1px solid #63A1FF;
   box-shadow: 0 4px 10px rgba(138, 138, 138, 0.25);
