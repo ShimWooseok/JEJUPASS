@@ -614,12 +614,12 @@ header{
 }
 
  .section07{
-  background-image: url(./img/section07.png);
+  /* background-image: url(./img/section07.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-
+  position: relative; */
+  background-color: green;
  }
 .section07 > .title-box{
   position: absolute;
@@ -628,25 +628,12 @@ header{
   font-size: 48px;
 }
 
-.section07 > .title-box::after{
-  content: "";
-
-  background-image: url(./img/프로모션icon.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
  .swiper-box2{
-
   width: 100%;
   height: 100%;
   position: relative;
  }
- .swiper-box2 > .swiper {
-
-  position: absolute;
-  top : 142px;
-  right : 0;
+ .swiper-box2  .swiper {
   width: 1050px;
   height: 360px;
 }
@@ -677,9 +664,9 @@ header{
   font-size: 24px;
   font-family: 'Happiness-Sans-Regular';
   color : #474848;
-  position: absolute;
+  /* position: absolute;
   top : 50%;
-  left : 259px;
+  left : 259px; */
 }
 
 .swiper-box2  .swiper-button-next2, .swiper-button-prev2{
@@ -715,9 +702,7 @@ header{
 }
 
 .swiper-box2 .swiper-nav-wrap{
-  position: absolute;
-  top : 68%;
-  left : 34%;
+
 }
 
 .section08 > .con > .content-wrap > a > .content-box > .img-box{
