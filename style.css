@@ -614,11 +614,11 @@ header{
 }
 
  .section07{
-  /* background-image: url(./img/section07.png);
+  background-image: url(./img/section07.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative; */
+  position: relative;
  }
  
  .swiper-box2{
