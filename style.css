@@ -619,23 +619,38 @@ header{
   background-position: center;
   background-size: cover;
   position: relative; */
-  background-color: green;
  }
-.section07 > .title-box{
-  position: absolute;
-  top :20%;
-  left : 259px;
-  font-size: 48px;
-}
-
+ 
  .swiper-box2{
   width: 100%;
   height: 100%;
   position: relative;
+
+ }
+ .swiper-box2 .swiper{
+  position: absolute;
+  right : 0;
+  top : 142px;
  }
  .swiper-box2  .swiper {
   width: 1050px;
   height: 360px;
+}
+
+.swiper-box2 .title-box{
+  position: relative;
+  font-size: 48px;
+}
+
+.swiper-box2 > .con > div > .title-box::after{
+  content: "";
+  width:  50px;
+  height: 54px;
+  position: absolute;
+  top : 51%;
+  right : 0;
+  background-image: url(./img/프로모션\ icon.png);
+  background-repeat: no-repeat;
 }
 
 .swiper-box2 .swiper-slide {
@@ -660,15 +675,16 @@ header{
 
 
 
-.section07 > .swiper-box2__active-slide-info-box-wrap{
+.section07  .swiper-box2__active-slide-info-box-wrap{
   font-size: 24px;
   font-family: 'Happiness-Sans-Regular';
   color : #474848;
-  /* position: absolute;
-  top : 50%;
-  left : 259px; */
+
 }
 
+.swiper-box2 .swiper-nav-wrap{
+  margin-top: 50px;
+}
 .swiper-box2  .swiper-button-next2, .swiper-button-prev2{
 
 }
@@ -701,9 +717,6 @@ header{
   font-family: 'Happiness-Sans-Regular';
 }
 
-.swiper-box2 .swiper-nav-wrap{
-
-}
 
 .section08 > .con > .content-wrap > a > .content-box > .img-box{
   border: 1px solid #63A1FF;

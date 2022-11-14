@@ -82,7 +82,7 @@ $(document).ready(function () {
       // centeredSlides: false,
       spaceBetween: 30,
       autoplay : {
-        delay : 2000
+        delay : 3000
       },
       loop : true,
       pagination: {
