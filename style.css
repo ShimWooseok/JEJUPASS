@@ -77,6 +77,8 @@
 }
 
 /* 스타일 */
+
+
 .wrapper{
     position: relative;
     z-index: 0;
@@ -138,7 +140,7 @@
 }
 .wrapper > .scroll-down-top-bar{
   position: fixed;
-  top : 0px;
+  top : -90px;
   left: 0;
   z-index: 97;
   font-family: 'Happiness-Sans-Bold';
@@ -216,7 +218,6 @@ header{
     left : 50%;
     transform: translateX(-50%);
     z-index: 1;
-
     animation: fly 2s linear infinite;
 }
 

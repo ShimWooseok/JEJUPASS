@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+
+
+
+
   $(".wrapper > header > .top-bar > .con > .side-menu").click(function () {
 
     $(".wrapper > .side").addClass("active");
@@ -130,4 +134,8 @@ $(window).scroll(function () {
   } else if (scrollTop < 300) {
     $(".scroll-down-top-bar").removeClass("active")
   }
+
+  
+
+
 })
