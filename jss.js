@@ -82,7 +82,8 @@ $(document).ready(function () {
       // centeredSlides: false,
       spaceBetween: 30,
       autoplay : {
-        delay : 3000
+        delay : 3000,
+        disableOnInteraction : false,
       },
       loop : true,
       pagination: {
