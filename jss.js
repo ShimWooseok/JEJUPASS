@@ -1,6 +1,12 @@
 $(document).ready(function () {
 
 
+  $(".top-btn").click(function(){
+    // $("html , body").scrollTop(800)
+    $("html , body").animate({
+      "scrollTop": 0 ,
+    },300)
+  })
 
 
 
@@ -135,6 +141,11 @@ $(window).scroll(function () {
     $(".scroll-down-top-bar").removeClass("active")
   }
 
+  if (scrollTop >= 600) {
+    $(".top-btn").addClass("active")
+  } else if (scrollTop < 400) {
+    $(".top-btn").removeClass("active")
+  }
   
 
 
